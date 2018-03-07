@@ -1,0 +1,48 @@
+#style{
+    padding: 0px 16px;
+}
+body{
+    margin: 0px;
+}
+ul.topnav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.topnav li{
+    float: left;
+}
+ul.topnav li a{
+display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+ul.topnav li a:hover:not(.active){
+background-color: #111;
+}
+ul.topnav li a.active{
+    background-color: #4acf50;
+}
+ul.topnav li.right{
+    float: right;
+}
+img.imagen{
+    background-image: url("facebook.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 254px;
+    height: 247px;
+}
+@media screen and (max-width:600px){
+    ul.topnav li.right,
+    ul.topnav li {float:none;}
+ img.imagen{background-image: url("twiter.jpg");
+background-size: auto;  
+width: 638px;
+height: 474px;
+}
+}
